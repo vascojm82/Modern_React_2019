@@ -1,0 +1,69 @@
+body{
+  background-image: url('../img/videos_bkgd.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.9);
+  background-blend-mode: luminosity;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 764px) {
+  .content{
+    padding: 0 165px;
+  }
+
+  .ui.image{
+    padding: 20px 20px 0 20px;
+  }
+}
+
+@media only screen and (max-width: 742px) {
+  .content{
+    padding: 0 150px;
+  }
+
+  .ui.image{
+    padding: 20px 20px 0 20px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .content{
+    padding: 0 120px;
+  }
+
+  .ui.image{
+    padding: 20px 20px 0 20px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .content{
+    padding: 0 100px;
+  }
+
+  .ui.image{
+    padding: 20px 20px 0 20px;
+  }
+}
+
+@media only screen and (max-width: 602px) {
+  .content{
+    padding: 0 70px;
+  }
+
+  .ui.image{
+    padding: 20px 20px 0 20px;
+  }
+}
+
+@media only screen and (max-width: 494px) {
+  .content{
+    padding: 0 20px;
+  }
+
+  .ui.image{
+    padding: 20px 20px 0 20px;
+  }
+}

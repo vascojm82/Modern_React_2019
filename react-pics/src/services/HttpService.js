@@ -8,7 +8,7 @@ let HttpService = {
         query: term
       },
       headers:{
-        Authorization: 'Client-ID <ENTER-HERE>'
+        Authorization: 'Client-ID 6b99e8f1828aa8177b9d1ed907d3e8c68ef18754583ce2da724033fc3317e191'
       }
     });
 
