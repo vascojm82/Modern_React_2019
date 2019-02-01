@@ -13,6 +13,10 @@ class App extends React.Component {
     });
   }
 
+  componentDidMount(){
+    this.onSearchSubmit("cars");
+  }
+
   render(){
     return(
       <div className="ui container" style={{marginTop: 10}}>
