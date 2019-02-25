@@ -1,26 +1,29 @@
 import streams from '../../apis/streams.js';
+import history from '../../history';
 import { SIGN_IN, SIGN_OUT, CREATE_STREAM, FETCH_STREAMS ,FETCH_STREAM, EDIT_STREAM, DELETE_STREAM } from './types';
 
-export let signIn = (userId) => {
+export let signIn = (userId) => {   //No AXIOS async ops so no need to use redux-thunk(dispatch), no promise returned, just plain JS object.
   return{
     type: SIGN_IN,
     payload: userId
   };
 }
 
-export let signOut = () => {
+export let signOut = () => {        //No AXIOS async ops so no need to use redux-thunk(dispatch), no promise returned, just plain JS object.
   return{
     type: SIGN_OUT
   };
 }
 
 export let createStream = (formValues) => {
-  return async (dispatch) => {
-    let response = await streams.post('/streams', formValues);
+  return async (dispatch, getState) => {
+    let { userId } = getState().auth;
+    let response = await streams.post('/streams', { ...formValues, userId });
     dispatch({
       type: CREATE_STREAM,
       payload: response.data
     });
+    history.push('/');
   }
 }
 

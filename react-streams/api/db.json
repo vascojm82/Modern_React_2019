@@ -3,12 +3,32 @@
     {
       "title": "My Stream",
       "description": "New Stream",
+      "userId": "103586441660404260515",
       "id": 1
     },
     {
       "title": "Some Other Stream",
       "description": "Newer Stream",
+      "userId": "103586441660404260515",
       "id": 2
+    },
+    {
+      "title": "Even Newer Stream",
+      "description": "This is an even Newer Stream",
+      "userId": "103586441660404260515",
+      "id": 3
+    },
+    {
+      "title": "Another Even Newer Stream",
+      "description": "Just created an even newer stream",
+      "userId": "103586441660404260515",
+      "id": 4
+    },
+    {
+      "title": "Another Newer Stream",
+      "description": "Yet another new stream",
+      "userId": "103586441660404260515",
+      "id": 5
     }
   ]
 }
