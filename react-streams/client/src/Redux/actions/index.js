@@ -51,12 +51,14 @@ export let fetchStream = (id) => {
 
 export let editStream = (id, formValues) => {
   return async (dispatch) => {
-    let response = await streams.put(`/streams/${id}`, formValues);
+    let response = await streams.patch(`/streams/${id}`, formValues);   //'patch' is to Update SOME properties of a record
 
     dispatch({
       type: EDIT_STREAM,
       payload: response.data
     });
+
+    history.push('/');
   }
 }
 
