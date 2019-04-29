@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< HEAD
 import { connect } from 'react-redux';
 import Modal from '../Modal';
 import { Link } from 'react-router-dom';
@@ -36,6 +37,17 @@ let mapStateToProps = (state, ownProps) => {
   return {
     stream: state.streams[ownProps.match.params.id]
   }
+=======
+import Modal from '../Modal';
+
+let StreamDelete = () => {
+  return(
+    <div>
+      StreamDelete
+      <Modal />
+    </div>
+  )
+>>>>>>> d56a1d4a3b9223d2976399557d2fb89d5f1be8f3
 };
 
 export default connect(mapStateToProps, { fetchStream, deleteStream })(StreamDelete);

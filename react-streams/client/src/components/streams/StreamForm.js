@@ -31,11 +31,11 @@ class StreamForm extends React.Component{
 
   render(){
     console.log("this.props: ", this.props);
-    
+
     return(
       <form onSubmit={this.props.handleSubmit(this.onSubmit)} className="ui form error">
-        <Field name="title" label="Enter Title" component={(formProps) => this.renderInput(formProps)} />
-        <Field name="description" label="Enter Description" component={(formProps) => this.renderInput(formProps)} />
+        <Field name="title" label="Enter Title" component={this.renderInput} />
+        <Field name="description" label="Enter Description" component={this.renderInput} />
         <button className="ui button primary">Submit</button>
       </form>
     );
@@ -43,7 +43,7 @@ class StreamForm extends React.Component{
 }
 
 let validate = (formValues) => {
-  let errors ={};
+  let errors = {};
 
   if(!formValues.title){
     errors.title = 'You must enter a title';

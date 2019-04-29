@@ -23,6 +23,12 @@
       "description": "Changed using PATCH",
       "userId": "103586441660404260515",
       "id": 6
+    },
+    {
+      "title": "New Stream added",
+      "description": "New Stream just added",
+      "userId": "103586441660404260515",
+      "id": 7
     }
   ]
 }
